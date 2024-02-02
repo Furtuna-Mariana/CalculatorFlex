@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculatorFlex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+
+            <input type="text" id="display" class="display" readonly>
+
+            <div class="buttons">
+                <button id="specialButtonAllClear" class="button" onclick="allClearDisplay('AC')">AC</button>
+                <button id="specialButtonDelete" class="button" onclick="deleteDisplay('DEL')">DEL</button>
+                <button id="specialButtonPercent" class="button" onclick="percentDisplay('%')">%</button>
+                <button id="specialButtonPlus" class="button" onclick="plusDisplay('+')">+</button>
+
+                <button class="button" onclick="appendToDisplay('7')">7</button>
+                <button class="button" onclick="appendToDisplay('8')">8</button>
+                <button class="button" onclick="appendToDisplay('9')">9</button>
+                <button id="specialButtonMinus" class="button" onclick="minusDisplay('-')">-</button>
+
+                <button class="button" onclick="appendToDisplay('4')">4</button>
+                <button class="button" onclick="appendToDisplay('5')">5</button>
+                <button class="button" onclick="appendToDisplay('6')">6</button>
+                <button id="specialButtonMultiply" class="button" onclick="multiplyDisplay('X')">X</button>
+
+                <button class="button" onclick="appendToDisplay('1')">1</button>
+                <button class="button" onclick="appendToDisplay('2')">2</button>
+                <button class="button" onclick="appendToDisplay('3')">3</button>
+                <button id="specialButtonDivide"  class="button" onclick="divideDisplay('/')">/</button>
+
+                <button class="button" onclick="appendToDisplay('0')">0</button>
+                <button id="button" class="button" onclick="appendToDisplay('.')">.</button>
+                <button  id="equalButton" class="button" onclick="calculate('=')">=</button>
+            </div>
+
+        </div>
+    </section>
+     <script src="index.js"></script>
+</body>
+</html>

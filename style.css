@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh; 
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292828e6;
+}
+
+.container{   
+    width: 100%;
+    max-width: 500px;
+    background-color: #000000d8;
+    border: 1px solid white;
+    border-radius: 3rem;
+    flex-wrap: wrap;
+}
+
+.container > .display{
+    height: 8rem;
+    width: 31.1rem;
+    color: white;
+    font-size: 6rem;
+    border: 1px solid white;
+    flex-direction: row-reverse;
+    text-align: right;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    border-radius: 3rem 3rem 2rem 2rem;
+    background-color: #000000d8;
+}
+
+.container > .buttons{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.5rem;
+    cursor: pointer;
+}
+
+.container > .buttons > .button{
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+    display: flex;
+    border: 1px solid orange;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem orange;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.container > .buttons > .button:hover{
+    background-color: rgb(251, 165, 5);
+}
+
+.container > .buttons > #specialButtonAllClear,
+.container > .buttons > #specialButtonDelete,
+.container > .buttons > #specialButtonPercent,
+.container > .buttons > #specialButtonPlus,
+.container > .buttons > #specialButtonMinus,
+.container > .buttons > #specialButtonDivide,
+.container > .buttons > #specialButtonMultiply{
+    background-color: orange;
+    border: 1px solid black;
+}
+    
+
+
+.container > .buttons > #specialButtonAllClear:hover,
+.container > .buttons > #specialButtonDelete:hover,
+.container > .buttons > #specialButtonPercent:hover,
+.container > .buttons > #specialButtonPlus:hover,
+.container > .buttons > #specialButtonMinus:hover,
+.container > .buttons > #specialButtonDivide:hover,
+.container > .buttons > #specialButtonMultiply:hover{
+    background-color: rgb(43, 40, 40);
+}
+
+
+.container > .buttons > #equalButton{
+background-color: orange;
+box-shadow: 0 0.5rem orange;
+border: 1px solid black;
+flex-basis: calc(100% - 14.5rem );
+}
+
+.container > .buttons > #equalButton:hover{
+    background-color: rgb(43, 40, 40);
+    border-radius: rgb(43, 40, 40);;
+}
+
+/* @media (min-width: 600) {
+    .container {
+        padding: 1rem;
+    } 
+
+    .container {
+        width: 1rem;
+        height: 1rem;
+        font-size: 0.5rem;
+    }
+}
+
+@media (min-width: 800) {
+    .container {
+        padding: 1.5rem;
+    } 
+
+    .container {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+
+} */
+
+
